@@ -105,7 +105,7 @@ def winner
   if won? == false
     return nil
   else
-    if board[won?(@board)[0]] == "X"
+    if board[[won?]0] == "X"
       return "X"
     else
       return "O"
