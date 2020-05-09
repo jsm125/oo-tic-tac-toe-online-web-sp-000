@@ -36,11 +36,7 @@ def position_taken?(index)
 end
 
 def valid_move?(index)
-  if index.to_i.between?(0,8) && !position_taken?(@board[index.to_i])
-    true
-  else
-    false
-  end
+  index.to_i.between?(0,8) && !position_taken?(@board[index.to_i])
 end
 
 def turn_count
