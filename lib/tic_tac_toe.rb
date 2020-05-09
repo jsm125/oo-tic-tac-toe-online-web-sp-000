@@ -87,6 +87,7 @@ def won?
     
     
     return false
+  end
 end
   
 def full?
