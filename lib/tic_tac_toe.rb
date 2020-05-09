@@ -70,7 +70,7 @@ def turn
 end
 
 def won?
-  WIN_COMBINATIONS.each do |win_combo|
+  WIN_COMBINATIONS.each {|win_combo|
     win_index_1 = win_combo[0]
     win_index_2 = win_combo[1]
     win_index_3 = win_combo[2]
@@ -84,10 +84,9 @@ def won?
     elsif
       position_1 == "O" && position_2 == "O" && position_3 == "O"
       return win_combo
-    
-    
+    end
+    }
     return false
-  end
 end
   
 def full?
