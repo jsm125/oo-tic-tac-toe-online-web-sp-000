@@ -102,7 +102,7 @@ def over?
 end
 
 def winner
-  if won?(@board) == false
+  if won? == false
     return nil
   else
     if board[won?(board)[0]] == "X"
